@@ -10,12 +10,14 @@ import SafariServices
 import Cocoa
 
 class SafariExtensionHandler: SFSafariExtensionHandler {
-    
-    override func messageReceived(withName messageName: String, from page: SFSafariPage, userInfo: [String : Any]?) {
-        if (messageName == "linkClicked") {
-            openURLWithUserInfo(userInfo: userInfo);
-        }
-    }
+
+// Cannot use this before figuring out how to prevent Safari from performing default actions when clicking
+// links with a modifier pressed
+//    override func messageReceived(withName messageName: String, from page: SFSafariPage, userInfo: [String : Any]?) {
+//        if (messageName == "linkClicked") {
+//            openURLWithUserInfo(userInfo: userInfo);
+//        }
+//    }
     
     override func contextMenuItemSelected(withCommand command: String,
                                           in page: SFSafariPage, userInfo: [String : Any]? = [:]) {
