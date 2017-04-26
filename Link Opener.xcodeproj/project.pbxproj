@@ -11,7 +11,36 @@
 		27DF126E1EAF131700D2D1F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DF126D1EAF131700D2D1F9 /* ViewController.swift */; };
 		27DF12701EAF131700D2D1F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27DF126F1EAF131700D2D1F9 /* Assets.xcassets */; };
 		27DF12731EAF131700D2D1F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27DF12711EAF131700D2D1F9 /* Main.storyboard */; };
+		27DF12811EAF135E00D2D1F9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DF12801EAF135E00D2D1F9 /* Cocoa.framework */; };
+		27DF12861EAF135E00D2D1F9 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DF12851EAF135E00D2D1F9 /* SafariExtensionHandler.swift */; };
+		27DF12881EAF135E00D2D1F9 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DF12871EAF135E00D2D1F9 /* SafariExtensionViewController.swift */; };
+		27DF128E1EAF135E00D2D1F9 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 27DF128D1EAF135E00D2D1F9 /* script.js */; };
+		27DF12931EAF135E00D2D1F9 /* Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 27DF127E1EAF135E00D2D1F9 /* Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27DF12911EAF135E00D2D1F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27DF12601EAF131700D2D1F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27DF127D1EAF135E00D2D1F9;
+			remoteInfo = Extension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		27DF12971EAF135E00D2D1F9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				27DF12931EAF135E00D2D1F9 /* Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		27DF12681EAF131700D2D1F9 /* Link Opener.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Link Opener.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +49,13 @@
 		27DF126F1EAF131700D2D1F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27DF12721EAF131700D2D1F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27DF12741EAF131700D2D1F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27DF127E1EAF135E00D2D1F9 /* Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		27DF12801EAF135E00D2D1F9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		27DF12841EAF135E00D2D1F9 /* Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Extension.entitlements; sourceTree = "<group>"; };
+		27DF12851EAF135E00D2D1F9 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		27DF12871EAF135E00D2D1F9 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		27DF128C1EAF135E00D2D1F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27DF128D1EAF135E00D2D1F9 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +66,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		27DF127B1EAF135E00D2D1F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27DF12811EAF135E00D2D1F9 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,6 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				27DF126A1EAF131700D2D1F9 /* Link Opener */,
+				27DF12821EAF135E00D2D1F9 /* Extension */,
+				27DF127F1EAF135E00D2D1F9 /* Frameworks */,
 				27DF12691EAF131700D2D1F9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				27DF12681EAF131700D2D1F9 /* Link Opener.app */,
+				27DF127E1EAF135E00D2D1F9 /* Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +108,34 @@
 			path = "Link Opener";
 			sourceTree = "<group>";
 		};
+		27DF127F1EAF135E00D2D1F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27DF12801EAF135E00D2D1F9 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27DF12821EAF135E00D2D1F9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				27DF12851EAF135E00D2D1F9 /* SafariExtensionHandler.swift */,
+				27DF12871EAF135E00D2D1F9 /* SafariExtensionViewController.swift */,
+				27DF128C1EAF135E00D2D1F9 /* Info.plist */,
+				27DF128D1EAF135E00D2D1F9 /* script.js */,
+				27DF12831EAF135E00D2D1F9 /* Supporting Files */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		27DF12831EAF135E00D2D1F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27DF12841EAF135E00D2D1F9 /* Extension.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,15 +146,34 @@
 				27DF12641EAF131700D2D1F9 /* Sources */,
 				27DF12651EAF131700D2D1F9 /* Frameworks */,
 				27DF12661EAF131700D2D1F9 /* Resources */,
+				27DF12971EAF135E00D2D1F9 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				27DF12921EAF135E00D2D1F9 /* PBXTargetDependency */,
 			);
 			name = "Link Opener";
 			productName = "Link Opener";
 			productReference = 27DF12681EAF131700D2D1F9 /* Link Opener.app */;
 			productType = "com.apple.product-type.application";
+		};
+		27DF127D1EAF135E00D2D1F9 /* Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27DF12941EAF135E00D2D1F9 /* Build configuration list for PBXNativeTarget "Extension" */;
+			buildPhases = (
+				27DF127A1EAF135E00D2D1F9 /* Sources */,
+				27DF127B1EAF135E00D2D1F9 /* Frameworks */,
+				27DF127C1EAF135E00D2D1F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Extension;
+			productName = Extension;
+			productReference = 27DF127E1EAF135E00D2D1F9 /* Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -92,6 +186,11 @@
 				ORGANIZATIONNAME = "Otto Vehvilainen";
 				TargetAttributes = {
 					27DF12671EAF131700D2D1F9 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 78VP7DTL6X;
+						ProvisioningStyle = Automatic;
+					};
+					27DF127D1EAF135E00D2D1F9 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 78VP7DTL6X;
 						ProvisioningStyle = Automatic;
@@ -112,6 +211,7 @@
 			projectRoot = "";
 			targets = (
 				27DF12671EAF131700D2D1F9 /* Link Opener */,
+				27DF127D1EAF135E00D2D1F9 /* Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +223,14 @@
 			files = (
 				27DF12701EAF131700D2D1F9 /* Assets.xcassets in Resources */,
 				27DF12731EAF131700D2D1F9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27DF127C1EAF135E00D2D1F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27DF128E1EAF135E00D2D1F9 /* script.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +246,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		27DF127A1EAF135E00D2D1F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27DF12881EAF135E00D2D1F9 /* SafariExtensionViewController.swift in Sources */,
+				27DF12861EAF135E00D2D1F9 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27DF12921EAF135E00D2D1F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27DF127D1EAF135E00D2D1F9 /* Extension */;
+			targetProxy = 27DF12911EAF135E00D2D1F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		27DF12711EAF131700D2D1F9 /* Main.storyboard */ = {
@@ -247,6 +372,7 @@
 		27DF12781EAF131700D2D1F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 78VP7DTL6X;
@@ -261,6 +387,7 @@
 		27DF12791EAF131700D2D1F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 78VP7DTL6X;
@@ -268,6 +395,34 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fi.mumakil.Link-Opener";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		27DF12951EAF135E00D2D1F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Extension/Extension.entitlements;
+				DEVELOPMENT_TEAM = 78VP7DTL6X;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fi.mumakil.Link-Opener.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		27DF12961EAF135E00D2D1F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Extension/Extension.entitlements;
+				DEVELOPMENT_TEAM = 78VP7DTL6X;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fi.mumakil.Link-Opener.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -289,6 +444,14 @@
 			buildConfigurations = (
 				27DF12781EAF131700D2D1F9 /* Debug */,
 				27DF12791EAF131700D2D1F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		27DF12941EAF135E00D2D1F9 /* Build configuration list for PBXNativeTarget "Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27DF12951EAF135E00D2D1F9 /* Debug */,
+				27DF12961EAF135E00D2D1F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
